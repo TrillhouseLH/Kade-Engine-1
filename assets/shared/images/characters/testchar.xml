@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="testchar.png">
+<SubTexture name="testchar idle0000" x="0" y="0" width="432" height="776" frameX="0" frameY="0" frameWidth="432" frameHeight="776" />
+<SubTexture name="testchar idle0001" x="432" y="0" width="440" height="782" frameX="0" frameY="0" frameWidth="440" frameHeight="782" />
+<SubTexture name="testchar idle0002" x="872" y="0" width="434" height="773" frameX="0" frameY="0" frameWidth="434" frameHeight="773" />
+<SubTexture name="testchar idle0003" x="1306" y="0" width="434" height="776" frameX="0" frameY="0" frameWidth="434" frameHeight="776" />
+<SubTexture name="testchar idle0004" x="0" y="782" width="426" height="800" frameX="0" frameY="0" frameWidth="426" frameHeight="800" />
+<SubTexture name="testchar down0000" x="426" y="782" width="472" height="826" frameX="0" frameY="0" frameWidth="472" frameHeight="826" />
+<SubTexture name="testchar down0001" x="898" y="782" width="468" height="836" frameX="0" frameY="0" frameWidth="468" frameHeight="836" />
+<SubTexture name="testchar left0000" x="1366" y="782" width="390" height="760" frameX="0" frameY="0" frameWidth="390" frameHeight="760" />
+<SubTexture name="testchar left0001" x="0" y="1618" width="391" height="804" frameX="0" frameY="0" frameWidth="391" frameHeight="804" />
+<SubTexture name="testchar right0000" x="391" y="1618" width="458" height="804" frameX="0" frameY="0" frameWidth="458" frameHeight="804" />
+<SubTexture name="testchar right0001" x="849" y="1618" width="464" height="804" frameX="0" frameY="0" frameWidth="464" frameHeight="804" />
+<SubTexture name="testchar up0000" x="1313" y="1618" width="414" height="888" frameX="0" frameY="0" frameWidth="414" frameHeight="888" />
+<SubTexture name="testchar up0001" x="0" y="2506" width="492" height="848" frameX="0" frameY="0" frameWidth="492" frameHeight="848" />
+</TextureAtlas>

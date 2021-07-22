@@ -1,19 +1,24 @@
-Tutorial:gf:1
+Tutorial:whitty:1
+Refresher:whitty:1
 Bopeebo:dad:1
 Fresh:dad:1
 Dad Battle:dad:1
-Spookeez:spooky:2
 South:spooky:2
-Monster:monster:2
+Shiver:spooky:2
+Vibe:spooky:2
 Pico:pico:3
 Philly Nice:pico:3
 Blammed:pico:3
 Satin Panties:mom:4
 High:mom:4
 Milf:mom:4
-Cocoa:parents-christmas:5
-Eggnog:parents-christmas:5
-Winter Horrorland:monster-christmas:5
-Senpai:senpai:6
-Roses:senpai:6
-Thorns:spirit:6
+Good Enough:lupa:5
+Tug of War:lupa:5
+Animal:lupa:5
+Senpai:lyle:6
+Roses:lyle-mad:6
+Two Hearts:lyle-pissed:6
+My Battle:tabi:7
+Last Chance:tabi:7
+Genocide:tabi:7
+

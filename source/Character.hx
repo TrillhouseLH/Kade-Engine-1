@@ -304,6 +304,7 @@ class Character extends FlxSprite
 				addOffset('deathConfirm', 37, 69);
 				addOffset('scared', -4);
 
+
 				playAnim('idle');
 
 				flipX = true;
@@ -498,6 +499,118 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+				
+				case 'dino':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/dino', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'dino idle', 24);
+				animation.addByPrefix('singUP', 'dino up', 24);
+				animation.addByPrefix('singRIGHT', 'dino right', 24);
+				animation.addByPrefix('singDOWN', 'dino down', 24);
+				animation.addByPrefix('singLEFT', 'dino left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 76, -46);
+				addOffset("singRIGHT", -13, -58);
+				addOffset("singLEFT", 24, -47);
+				addOffset("singDOWN", 44, -197);
+				
+				playAnim('idle');
+				
+				case 'lupa':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/lupa', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'lupa idle', 24);
+				animation.addByPrefix('singUP', 'lupa up', 24);
+				animation.addByPrefix('singRIGHT', 'lupa right', 24);
+				animation.addByPrefix('singDOWN', 'lupa down', 24);
+				animation.addByPrefix('singLEFT', 'lupa left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 12, 20);
+				addOffset("singRIGHT", -32, -17);
+				addOffset("singLEFT", 8, -6);
+				addOffset("singDOWN", -33, -16);
+				
+				playAnim('idle');
+			
+		        case 'lyle':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/lyle', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'lyle_idle', 24);
+				animation.addByPrefix('singUP', 'lyle_up', 24);
+				animation.addByPrefix('singRIGHT', 'lyle_right', 24);
+				animation.addByPrefix('singDOWN', 'lyle_down', 24);
+				animation.addByPrefix('singLEFT', 'lyle_left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 32, 82);
+				addOffset("singRIGHT", 96, 41);
+				addOffset("singLEFT", 56, -6);
+				addOffset("singDOWN", 30, -30);
+
+				playAnim('idle');
+				
+				case 'lyle-mad':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/lyle_mad', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'lyle_mad_idle', 24);
+				animation.addByPrefix('singUP', 'lyle_mad_up', 24);
+				animation.addByPrefix('singRIGHT', 'lyle_mad_right', 24);
+				animation.addByPrefix('singDOWN', 'lyle_mad_down', 24);
+				animation.addByPrefix('singLEFT', 'lyle_mad_left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 32, 82);
+				addOffset("singRIGHT", 96, 41);
+				addOffset("singLEFT", 56, -6);
+				addOffset("singDOWN", 30, -30);
+
+				playAnim('idle');
+				
+				case 'lyle-pissed':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/lyle_pissed', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'lyle_pissed_idle', 24);
+				animation.addByPrefix('singUP', 'lyle_pissed_up', 24);
+				animation.addByPrefix('singRIGHT', 'lyle_pissed_right', 24);
+				animation.addByPrefix('singDOWN', 'lyle_pissed_down', 24);
+				animation.addByPrefix('singLEFT', 'lyle_pissed_left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 32, 82);
+				addOffset("singRIGHT", 96, 41);
+				addOffset("singLEFT", 56, -6);
+				addOffset("singDOWN", 30, -30);
+
+				playAnim('idle');
+				
+				 case 'tabi':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/TABI', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24, false);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24, false);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24, false);
+
+				addOffset('idle');
+
+				addOffset("singUP", 44, 50);
+				addOffset("singRIGHT", -15, 11);
+				addOffset("singLEFT", 104, -28);
+				addOffset("singDOWN", -5, -108);
+				addOffset("singDOWN", -5, -108);
+
+				playAnim('idle');
+				
+    
 		}
 
 		dance();
@@ -617,6 +730,8 @@ class Character extends FlxSprite
 						playAnim('danceRight');
 					else
 						playAnim('danceLeft');
+				
+				
 				default:
 					playAnim('idle');
 			}

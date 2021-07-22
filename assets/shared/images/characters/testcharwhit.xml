@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="testcharwhit.png">
+<SubTexture name="testcharwhit idle0000" x="0" y="0" width="432" height="776" frameX="0" frameY="0" frameWidth="432" frameHeight="776" />
+<SubTexture name="testcharwhit idle0001" x="432" y="0" width="440" height="782" frameX="0" frameY="0" frameWidth="440" frameHeight="782" />
+<SubTexture name="testcharwhit idle0002" x="872" y="0" width="434" height="773" frameX="0" frameY="0" frameWidth="434" frameHeight="773" />
+<SubTexture name="testcharwhit idle0003" x="1306" y="0" width="434" height="776" frameX="0" frameY="0" frameWidth="434" frameHeight="776" />
+<SubTexture name="testcharwhit idle0004" x="0" y="782" width="426" height="800" frameX="0" frameY="0" frameWidth="426" frameHeight="800" />
+<SubTexture name="testcharwhit down0000" x="426" y="782" width="472" height="826" frameX="0" frameY="0" frameWidth="472" frameHeight="826" />
+<SubTexture name="testcharwhit down0001" x="898" y="782" width="468" height="836" frameX="0" frameY="0" frameWidth="468" frameHeight="836" />
+<SubTexture name="testcharwhit left0000" x="1366" y="782" width="390" height="760" frameX="0" frameY="0" frameWidth="390" frameHeight="760" />
+<SubTexture name="testcharwhit left0001" x="0" y="1618" width="391" height="804" frameX="0" frameY="0" frameWidth="391" frameHeight="804" />
+<SubTexture name="testcharwhit right0000" x="391" y="1618" width="458" height="804" frameX="0" frameY="0" frameWidth="458" frameHeight="804" />
+<SubTexture name="testcharwhit right0001" x="849" y="1618" width="464" height="804" frameX="0" frameY="0" frameWidth="464" frameHeight="804" />
+<SubTexture name="testcharwhit up0000" x="1313" y="1618" width="414" height="888" frameX="0" frameY="0" frameWidth="414" frameHeight="888" />
+<SubTexture name="testcharwhit up0001" x="0" y="2506" width="492" height="848" frameX="0" frameY="0" frameWidth="492" frameHeight="848" />
+</TextureAtlas>

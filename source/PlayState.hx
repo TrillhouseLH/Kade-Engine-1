@@ -368,7 +368,7 @@ class PlayState extends MusicBeatState
 		}
 
 		//defaults if no stage was found in chart
-		var stageCheck:String = 'stage';
+		var stageCheck:String = 'livingroom';
 		
 		if (SONG.stage == null) {
 			switch(storyWeek)
@@ -394,7 +394,7 @@ class PlayState extends MusicBeatState
 
 				var hallowTex = Paths.getSparrowAtlas('halloween_bg','week2');
 
-				halloweenBG = new FlxSprite(-200, -100);
+				halloweenBG = new FlxSprite(-500, -110);
 				halloweenBG.frames = hallowTex;
 				halloweenBG.animation.addByPrefix('idle', 'halloweem bg0');
 				halloweenBG.animation.addByPrefix('lightning', 'halloweem bg lightning strike', 24, false);
@@ -736,6 +736,167 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
+				case 'lhtest':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'lhtest';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('test/LHtest'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+	
+					
+				}
+					case 'attic':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'attic';
+						var bg:FlxSprite = new FlxSprite(-600, 200).loadGraphic(Paths.image('attic'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+	
+					
+				}
+					case 'alley':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'alley';
+					var bg:FlxSprite = new FlxSprite(-500, -170).loadGraphic(Paths.image('test/garStagebg'));
+						  bg.antialiasing = true;
+						  bg.scrollFactor.set(0.7, 0.7);
+						  bg.active = false;
+						  add(bg);
+
+						  var bgAlley:FlxSprite = new FlxSprite(-500, -200).loadGraphic(Paths.image('test/garStage'));
+						  bgAlley.antialiasing = true;
+						  bgAlley.scrollFactor.set(0.9, 0.9);
+						  bgAlley.active = false;
+						  add(bgAlley);
+				}
+				case 'dinostage':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'dinostage';
+						var bg:FlxSprite = new FlxSprite(-600, -300).loadGraphic(Paths.image('dinostageback'));
+						bg.setGraphicSize(Std.int(bg.width * 0.75));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.7, 0.7);
+						bg.active = false;
+						add(bg);
+	
+						var dinostageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
+						dinostageFront.setGraphicSize(Std.int(dinostageFront.width * 1.1));
+						dinostageFront.updateHitbox();
+						dinostageFront.antialiasing = true;
+						dinostageFront.scrollFactor.set(0.9, 0.9);
+						dinostageFront.active = false;
+				 	    add(dinostageFront);
+	
+						var dinostageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('dinostagecurtains'));
+						dinostageCurtains.setGraphicSize(Std.int(dinostageCurtains.width * 0.9));
+						dinostageCurtains.updateHitbox();
+						dinostageCurtains.antialiasing = true;
+						dinostageCurtains.scrollFactor.set(1.3, 1.3);
+						dinostageCurtains.active = false;
+	
+						add(dinostageCurtains);
+				}
+	        case 'scrapyard':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'scrapyard';
+						var bg:FlxSprite = new FlxSprite(-600, -100).loadGraphic(Paths.image('scrapyardbg'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.4, 0.4);
+						bg.active = false;
+						add(bg);
+	
+						var SchoolBus:FlxSprite = new FlxSprite(-400, -100).loadGraphic(Paths.image('schoolbus'));
+						SchoolBus.setGraphicSize(Std.int(SchoolBus.width * 0.85));
+						SchoolBus.updateHitbox();
+						SchoolBus.antialiasing = true;
+						SchoolBus.scrollFactor.set(0.7, 0.7);
+						SchoolBus.active = false;
+						add(SchoolBus);
+	
+						var scrapFront:FlxSprite = new FlxSprite(-500, -160).loadGraphic(Paths.image('scrapyardfront'));
+						scrapFront.setGraphicSize(Std.int(scrapFront.width * 1));
+						scrapFront.updateHitbox();
+						scrapFront.antialiasing = true;
+						scrapFront.scrollFactor.set(0.9, 0.9);
+						scrapFront.active = false;
+	
+						add(scrapFront);
+				}  
+			case 'livingroom':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'livingroom';
+						var bg:FlxSprite = new FlxSprite(-500, -200).loadGraphic(Paths.image('livingroombg'));
+						bg.setGraphicSize(Std.int(bg.width * 0.80));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.7, 0.7);
+						bg.active = false;
+						add(bg);
+	
+						var LivingRoom:FlxSprite = new FlxSprite(-225, 60).loadGraphic(Paths.image('livingroom'));
+						LivingRoom.setGraphicSize(Std.int(LivingRoom.width * 0.75));
+						LivingRoom.updateHitbox();
+						LivingRoom.antialiasing = true;
+						LivingRoom.scrollFactor.set(0.85, 0.85);
+						LivingRoom.active = false;
+						add(LivingRoom);
+	
+						var Sofa:FlxSprite = new FlxSprite(-100, 0).loadGraphic(Paths.image('livingroomsofa'));
+						Sofa.setGraphicSize(Std.int(Sofa.width * 0.75));
+						Sofa.updateHitbox();
+						Sofa.antialiasing = true;
+						Sofa.scrollFactor.set(0.9, 0.9);
+						Sofa.active = false;
+	
+						add(Sofa);
+				}	
+			case 'woods':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'woods';
+						var bg:FlxSprite = new FlxSprite(-500, 200).loadGraphic(Paths.image('woods/woods_bg'));
+						bg.setGraphicSize(Std.int(bg.width * 0.7));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.5, 0.5);
+						bg.active = false;
+						add(bg);
+	
+						var BgHill:FlxSprite = new FlxSprite(-300, 60).loadGraphic(Paths.image('woods/woods_bghill'));
+						BgHill.setGraphicSize(Std.int(BgHill.width * 0.6));
+						BgHill.updateHitbox();
+						BgHill.antialiasing = true;
+						BgHill.scrollFactor.set(0.6, 0.6);
+						BgHill.active = false;
+						add(BgHill);
+	
+						var Hill:FlxSprite = new FlxSprite(-250, 60).loadGraphic(Paths.image('woods/woods_hill'));
+						Hill.setGraphicSize(Std.int(Hill.width * 0.70));
+						Hill.updateHitbox();
+						Hill.antialiasing = true;
+						Hill.scrollFactor.set(0.7, 0.7);
+						Hill.active = false;
+	                    add(Hill);
+						
+						var fg:FlxSprite = new FlxSprite(-250, 60).loadGraphic(Paths.image('woods/woods_fg'));
+						fg.setGraphicSize(Std.int(fg.width * 0.75));
+						fg.updateHitbox();
+						fg.antialiasing = true;
+						fg.scrollFactor.set(0.9, 0.9);
+						fg.active = false;
+	                    add(fg);
+					 
+				}	
+		
+				
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -771,9 +932,7 @@ class PlayState extends MusicBeatState
 		if (SONG.gfVersion == null) {
 			switch(storyWeek)
 			{
-				case 4: gfCheck = 'gf-car';
-				case 5: gfCheck = 'gf-christmas';
-				case 6: gfCheck = 'gf-pixel';
+				case 4: gfCheck = 'gf';
 			}
 		} else {gfCheck = SONG.gfVersion;}
 
@@ -833,10 +992,27 @@ class PlayState extends MusicBeatState
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+			case 'dino':
+				dad.x += 90;
+				dad.y -=30;
+			case 'lupa':
+				dad.y += 200;
+				dad.x +=40;
+			case 'lyle':
+				dad.x +=114;
+				dad.y +=240;
+			case 'lyle-mad':
+				dad.x +=114;
+				dad.y +=240;
+			case 'lyle-pissed':
+				dad.x +=114;
+				dad.y +=240;
+				
+			
 		}
 
 
-		
+
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
 
 		// REPOSITIONING PER STAGE
@@ -852,7 +1028,10 @@ class PlayState extends MusicBeatState
 
 			case 'mall':
 				boyfriend.x += 200;
-
+			case 'livingroom':			
+				boyfriend.y +=200;
+				dad.y +=200;
+                gf.y +=200;
 			case 'mallEvil':
 				boyfriend.x += 320;
 				dad.y -= 80;
@@ -1004,6 +1183,7 @@ class PlayState extends MusicBeatState
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
 
+
 		if (PlayStateChangeables.useDownscroll)
 			kadeEngineWatermark.y = FlxG.height * 0.9 + 45;
 
@@ -1103,13 +1283,7 @@ class PlayState extends MusicBeatState
 							});
 						});
 					});
-				case 'senpai':
-					schoolIntro(doof);
-				case 'roses':
-					FlxG.sound.play(Paths.sound('ANGRY'));
-					schoolIntro(doof);
-				case 'thorns':
-					schoolIntro(doof);
+
 				default:
 					startCountdown();
 			}
@@ -1652,9 +1826,6 @@ class PlayState extends MusicBeatState
 			if (PlayStateChangeables.Optimize && player == 0)
 				continue;
 
-			if (SONG.noteStyle == null) {
-				switch(storyWeek) {case 6: noteTypeCheck = 'pixel';}
-			} else {noteTypeCheck = SONG.noteStyle;}
 
 			switch (noteTypeCheck)
 			{

@@ -6,3 +6,9 @@ mall
 mallEvil
 school
 schoolEvil
+alley
+lhtest
+dinostage
+scrapyard
+livingroom
+woods
